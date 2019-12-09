@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Page</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+</head>
+<body>
+	<h1 class="hidden">contact Page</h1>
+	<div class="container"><!-- Start container -->
+		<header class="mainheader"><!--start header-->
+			<div class="logoheader"><img src="images/logo.svg" alt="Logo of david mcfarlane"></div>	
+			<nav class="mainnav"><!--start nav-->
+				<h2 class="hidden">Main Nav</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html" class="selected">Contact</a></li>
+				</ul>
+			</nav><!--close nav-->
+		</header><!--close header-->
+	<main>
+		<section id="maincontact"><!--start main contact-->
+			<h2>contact me!</h2>
+				<form id="contactform" action="form.php" method="post">
+
+					<label id="contacttext">Name: (required)</label>
+					<input type="text" required size="30" placeholder="enter your name">
+
+					<label id="contacttext">Email: (required)</label>
+					<input type="email" required size="30" placeholder="enter your email">
+
+					<label id="contacttext">Phone: (required)</label>
+					<input type="tel" required size="30" placeholder="enter you phone number">
+
+					<label id="contacttext">Comments:</label>
+					<textarea required cols="50" rows="8" id="comments"></textarea>
+
+					<input type="submit" value="submit" id="submit">
+				</form>
+		</main>
+		<footer class="mainfooter"><!--start footer-->
+			<div class="logonav">
+				<div class="logofooter"><img src="images/logo.svg" alt="Logo of david mcfarlane"></div>
+			<nav class="footernav"><!--start footer nav-->
+				<h2 class="hidden">Footer Nav</h2>	
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav><!--close footer nav-->
+			</div>
+		</footer><!--close footer-->
+	</div><!--Close container-->
+</body>
+</html>
